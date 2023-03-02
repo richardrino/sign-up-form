@@ -1,0 +1,116 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  background-image: url(zachary-kadolph-hwHHq82Enf0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row-start: span 3;
+}
+
+.right-grid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(12, 12, 12);
+  grid-column-start: span 2;
+  grid-row-start: span 3;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 60px 50px;
+}
+
+.container:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.container:nth-child(2) {
+  background-color: rgb(24, 24, 24);
+}
+
+.container:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 50px;
+}
+
+.input-container:nth-child(3) {
+  grid-row-start: 2;
+}
+
+.input-container:nth-child(4) {
+  grid-row-start: 2;
+}
+
+.input-container:nth-child(5) {
+  grid-row-start: 3;
+}
+
+.input-container:nth-child(6) {
+  grid-row-start: 3;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.15rem;
+}
+
+.form-button {
+  background-color: rgb(165, 32, 165);
+  color: white;
+  padding: 10px 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(51, 51, 51);
+  margin-bottom: 2.5rem;
+}
+
+.highlight {
+  color: rgb(165, 32, 165);
+}
