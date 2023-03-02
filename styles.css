@@ -52,6 +52,18 @@ p {
   font-weight: bold;
 }
 
+.image-text-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+}
+
+.photo-credit a {
+  color: white;
+}
+
 .right-grid {
   display: grid;
   height: 100%;
