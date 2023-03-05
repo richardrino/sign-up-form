@@ -11,6 +11,7 @@ body {
 
 p {
   margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
 }
 
 .page-grid {
@@ -55,9 +56,9 @@ p {
 .image-text-container {
   display: flex;
   justify-content: center;
-  width: 100%;
   position: absolute;
   bottom: 25px;
+  width: 100%;
 }
 
 .photo-credit a {
@@ -96,8 +97,8 @@ p {
 }
 
 .text-container {
-  font-size: 1.4rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .form-grid {
@@ -124,19 +125,20 @@ p {
 }
 
 .input {
-  width: 100%;
+  width: min(25rem, 100%);
   height: 30px;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .label {
-  text-transform: uppercase;
   font-size: 12px;
+  text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
 
 .form-button {
-  padding: 10px 50px;
+  padding: 1em 3em;
   border: none;
   border-radius: 5px;
   margin-bottom: 2.5rem;
