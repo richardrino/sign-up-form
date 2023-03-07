@@ -40,7 +40,7 @@ passwordConfirm.addEventListener("input", (e) => {
     password.classList.remove("password-mismatch");
     passwordConfirm.classList.add("password-matches");
     passwordConfirm.classList.remove("password-mismatch");
-    removePasswordMsg();
+    hidePasswordMsg();
   } else if (passwordConfirm.value) {
     password.classList.remove("password-matches");
     password.classList.add("password-mismatch");
