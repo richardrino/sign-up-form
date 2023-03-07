@@ -151,3 +151,11 @@ p {
 .highlight {
   color: rgb(165, 32, 165);
 }
+
+.password-matches {
+  border: 5px solid green;
+}
+
+.password-mismatch {
+  border: 5px solid red;
+}
