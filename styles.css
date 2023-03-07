@@ -159,3 +159,11 @@ p {
 .password-mismatch {
   border: 5px solid red;
 }
+
+.password-msg {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

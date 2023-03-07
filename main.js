@@ -10,11 +10,13 @@ password.addEventListener("input", (e) => {
     password.classList.remove("password-mismatch");
     passwordConfirm.classList.add("password-matches");
     passwordConfirm.classList.remove("password-mismatch");
+    hidePasswordMsg();
   } else if (passwordConfirm.value) {
     password.classList.remove("password-matches");
     password.classList.add("password-mismatch");
     passwordConfirm.classList.remove("password-matches");
     passwordConfirm.classList.add("password-mismatch");
+    displayPasswordMsg(isEqual);
   }
 
   if (!password.value && !passwordConfirm.value) {
@@ -38,11 +40,13 @@ passwordConfirm.addEventListener("input", (e) => {
     password.classList.remove("password-mismatch");
     passwordConfirm.classList.add("password-matches");
     passwordConfirm.classList.remove("password-mismatch");
+    removePasswordMsg();
   } else if (passwordConfirm.value) {
     password.classList.remove("password-matches");
     password.classList.add("password-mismatch");
     passwordConfirm.classList.remove("password-matches");
     passwordConfirm.classList.add("password-mismatch");
+    displayPasswordMsg(isEqual);
   }
 
   if (!password.value && !passwordConfirm.value) {
@@ -52,3 +56,16 @@ passwordConfirm.addEventListener("input", (e) => {
     passwordConfirm.classList.remove("password-mismatch");
   }
 });
+
+function displayPasswordMsg(isEqual) {
+  const passwordMsg = document.querySelector(".password-msg");
+
+  if (!isEqual) {
+    passwordMsg.classList.add("visible");
+  }
+}
+
+function hidePasswordMsg() {
+  const passwordMsg = document.querySelector(".password-msg");
+  passwordMsg.classList.remove("visible");
+}
