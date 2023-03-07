@@ -38,8 +38,8 @@ p {
   position: absolute;
   top: 10%;
   width: 100%;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.438);
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.301);
   font-size: 3rem;
 }
 
@@ -108,6 +108,10 @@ p {
   column-gap: 50px;
 }
 
+.input-container {
+  position: relative;
+}
+
 .input-container:nth-child(3) {
   grid-row-start: 2;
 }
@@ -126,15 +130,16 @@ p {
 
 .input {
   width: min(25rem, 100%);
-  height: 30px;
   border-radius: 5px;
   font-size: 1.2rem;
 }
 
 .label {
-  font-size: 12px;
+  display: inline-block;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
+  margin-bottom: 0.35em;
 }
 
 .form-button {
@@ -148,22 +153,34 @@ p {
   font-size: 1.2rem;
 }
 
+.form-button:hover {
+  background-color: rgb(228, 47, 228);
+  cursor: pointer;
+}
+
 .highlight {
   color: rgb(165, 32, 165);
 }
 
+.highlight:hover {
+  color: rgb(228, 47, 228);
+  cursor: pointer;
+}
+
 .password-matches {
-  border: 5px solid green;
+  border: 4px solid rgb(0, 187, 0);
 }
 
 .password-mismatch {
-  border: 5px solid red;
+  border: 4px solid rgb(255, 42, 42);
 }
 
 .password-msg {
-  display: none;
+  display: inline-block;
+  margin-top: 0.35rem;
+  visibility: hidden;
 }
 
 .visible {
-  display: block;
+  visibility: visible;
 }
